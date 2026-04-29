@@ -19,6 +19,5 @@ sn.jointplot(x="age",y="fare",kind="hex",data=d)
 sn.jointplot(x="age",y="fare",kind="reg",data=d)
 
 dt= d.dropna(subset=["age", "fare"])
-
 sn.jointplot(x="age",y="fare",data=dt)
 plt.show()
