@@ -13,9 +13,11 @@ print(d.head())
 sn.pairplot(d)
 sn.pairplot(d,hue="species")
 sn.pairplot(d,vars=["bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"],hue="species")
+
 dt = sn.load_dataset("tips")
 print(dt.head())
 plt.figure()
+
 sn.distplot(dt["total_bill"])
 plt.figure()
 sn.distplot(dt["total_bill"], kde=True, hist=True)
