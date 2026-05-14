@@ -20,8 +20,10 @@ plt.figure()
 
 sn.distplot(dt["total_bill"])
 plt.figure()
+
 sn.distplot(dt["total_bill"], kde=True, hist=True)
 plt.figure()
+
 sn.distplot(dt["total_bill"], kde=False)
 plt.figure()
 sn.distplot(dt["total_bill"], hist=False)
